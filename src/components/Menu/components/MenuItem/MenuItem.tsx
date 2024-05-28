@@ -8,8 +8,6 @@ export const MenuItem = memo(({name, getSelectedItem}: MenuItemProps) => {
 
   const { selectedItem } = useProvider()
 
-  console.log(selectedItem)
-
   return (
     <div className={clsx(classes.container, name === selectedItem && classes.selected)} onClick={() => getSelectedItem(name)}>
       {name}

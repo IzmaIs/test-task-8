@@ -32,8 +32,6 @@ export const Provider = ({ children }: PageProviderProps) => {
     setSelectedItem(name)
   }, [])
 
-  console.log(menuItems)
-
   const value = useMemo(() => ({
     getFilteredCourses, menuItems, getSelectedItem, selectedItem
   }), [getFilteredCourses, getSelectedItem, menuItems, selectedItem])
