@@ -1,6 +1,6 @@
 import classes from './TegCard.module.scss';
 import {useProvider} from "../../provider";
-import {TegCardItem} from "./components/TegCardItem";
+import {TegCardItem} from "./components";
 
 export const TegCard = () => {
 
